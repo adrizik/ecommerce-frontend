@@ -1,0 +1,37 @@
+<div class="top-bar">
+<div class="title">
+    <h1>Shop</h1>
+</div>
+
+<div class="searchbar">
+    <mat-form-field class="search" appearance="outline">
+        <mat-label>Search product</mat-label>
+        <input matInput placeholder="Ex. Watch" [(ngModel)]="productKeyword" name="productKeyword">
+        <button mat-icon-button matSuffix (click)="search()"> 
+            <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+      <button class="seeAll" mat-raised-button 
+            (click)="getProducts()">See all
+        </button>
+</div>
+</div>
+
+<div class="container">
+<div *ngFor="let product of products">
+    <mat-card class="products-card">
+
+        <mat-card-header>
+            <mat-card-title>{{product.title}}</mat-card-title>
+            <mat-card-subtitle>{{product.price | currency}}</mat-card-subtitle>
+        </mat-card-header>
+        <img src="assets/products/{{product.id}}.png" mat-card-image>
+        <mat-card-actions class="card-button">
+            <button mat-raised-button class="snack" 
+            (click)="addToAccount(product.id)">Add to cart
+            </button>
+        </mat-card-actions>
+
+    </mat-card>
+</div>
+</div>

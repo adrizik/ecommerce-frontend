@@ -1,0 +1,16 @@
+<div class="toolbar" role="banner">
+    <a routerLink="/" class="home-button" routerLinkActive="home-active-link">Revamazon</a>
+        <div class="spacer"></div>
+        
+        <div>
+          <a routerLink="/shop" routerLinkActive="active-link" class="circle-button">
+            <span>Shop</span>
+          </a>
+          <a routerLink="/checkout" routerLinkActive="active-link" class="circle-button">
+            <span>Checkout</span>
+          </a>
+          <a routerLink="/" routerLinkActive="active-link" class="circle-button" (click)="isLoggedOut()">
+            <span>Log Out</span>
+          </a>
+      </div>
+    </div>

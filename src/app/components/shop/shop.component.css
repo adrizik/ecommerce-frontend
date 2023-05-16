@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap');
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+.title h1 {
+    font-size: 48px;
+    margin-top: 5vh;
+    font-family: 'Averia Serif Libre', cursive;
+    margin-left: 5vh;
+    color: #4F4734;
+}
+
+
+.searchbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5vh;
+    align-items: baseline;
+    margin-right: 5vh;
+}
+
+.seeAll {
+    margin-left: 2vh;
+}
+
+.products-card {
+    max-width: 400px;
+    margin: 5vh 5vh;
+}
+
+.card-button {
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

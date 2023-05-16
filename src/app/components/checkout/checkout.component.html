@@ -1,0 +1,18 @@
+<div class="container">
+
+    <mat-card class="products-card">
+        <mat-card-header>
+            <mat-card-title  class="balance"> Your balance is {{balance | currency}}</mat-card-title>
+            <div *ngFor="let product of products" class="price">
+                <mat-card-title>{{product.title}}</mat-card-title>
+                <mat-card-subtitle>{{product.price | currency}}</mat-card-subtitle>
+            </div>
+        </mat-card-header>
+        <mat-card-actions>
+            <button mat-raised-button 
+                (click)="checkout()">Checkout
+            </button>
+        </mat-card-actions>
+    </mat-card>
+
+</div>

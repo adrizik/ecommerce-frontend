@@ -1,0 +1,74 @@
+.center-content {
+    height: 100vh;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    background-image: url(https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.example-card {
+    max-width: 400px;
+    margin-top: 20vh;
+    position: relative;
+    z-index: 1;
+}
+
+mat-toolbar {
+    background-color: #EFC141;
+    color: white;
+    align-items: end;
+}
+
+mat-toolbar h1 {
+    margin-left: 58px;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.mat-button {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.mat-mdc-card-header {
+    display: flex;
+    padding: 16px 16px 0;
+    justify-content: space-around;
+}
+
+.message {
+    padding-top: 10px;
+    color: #3F3C34;
+}
+
+.verification {
+    padding-top: 10px;
+    color: #EFC141;
+}
+
+.mat-mdc-raised-button.mat-primary {
+    --mdc-protected-button-container-color: #EFC141;
+    --mdc-protected-button-label-text-color: #3F3C34;
+}

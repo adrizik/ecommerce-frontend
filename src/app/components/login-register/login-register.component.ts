@@ -68,7 +68,7 @@ export class LoginRegisterComponent {
       },
       error => {
         if (error.status === 500) {
-          this.reg_message = "User associated with email already exists. Please Login or select Forgot Password."
+          this.reg_message = "User associated with email already exists."
           setTimeout(() => {
             this.reg_message = null;
           }, 15000)
